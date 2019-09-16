@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="93a14286-4932-4619-a202-7d4452b5780b" name="Default Changelist" comment="" />
+    <list default="true" id="93a14286-4932-4619-a202-7d4452b5780b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/fisio/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/fisio/settings.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +24,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/models.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="375">
@@ -58,11 +60,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/fisio/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="86" column="24" lean-forward="true" selection-start-line="86" selection-start-column="24" selection-end-line="86" selection-end-column="24" />
+            <state relative-caret-position="120">
+              <caret line="77" selection-start-line="77" selection-end-line="77" />
             </state>
           </provider>
         </entry>
@@ -88,6 +90,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -95,8 +100,8 @@
         <option value="$PROJECT_DIR$/fisio/urls.py" />
         <option value="$PROJECT_DIR$/api/viewsets.py" />
         <option value="$PROJECT_DIR$/api/serializers.py" />
-        <option value="$PROJECT_DIR$/fisio/settings.py" />
         <option value="$PROJECT_DIR$/api/models.py" />
+        <option value="$PROJECT_DIR$/fisio/settings.py" />
       </list>
     </option>
   </component>
@@ -105,6 +110,7 @@
     <option name="width" value="1368" />
     <option name="height" value="769" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -127,6 +133,12 @@
               <item name="fisio" type="b2602c69:ProjectViewProjectNode" />
               <item name="fisio" type="462c0819:PsiDirectoryNode" />
               <item name="fisio" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fisio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fisio" type="462c0819:PsiDirectoryNode" />
+              <item name="fisio" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="fisio" type="b2602c69:ProjectViewProjectNode" />
@@ -253,13 +265,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fisio/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="86" column="24" lean-forward="true" selection-start-line="86" selection-start-column="24" selection-end-line="86" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -267,6 +272,13 @@
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fisio/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="77" selection-start-line="77" selection-end-line="77" />
         </state>
       </provider>
     </entry>
