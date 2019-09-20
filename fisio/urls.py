@@ -36,5 +36,6 @@ router.register('billstoreceive', viewsets.BillsToReceiveViewSet, base_name='bil
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/v0/', include(router.urls)),
+    path('api/v0/', include('painel.urls')),
     path('api-auth/', obtain_auth_token)
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
