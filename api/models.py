@@ -43,6 +43,7 @@ class Diagnostic(models.Model):
     patient = models.ForeignKey('Patient', on_delete=models.CASCADE)
     name = models.CharField(max_length=256)
     appointment = models.ForeignKey('Appointment', blank=True, null=True, on_delete=models.CASCADE)
+    day = models.DateField()
     fisio = models.ForeignKey('auth.User', on_delete=models.CASCADE)
     anamnese = models.CharField(max_length=1024, blank=True, null=True)
     fowarding = models.CharField(max_length=1024, blank=True, null=True)
