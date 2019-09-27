@@ -27,6 +27,7 @@ router.register('image-patient', viewsets.ImagePatientViewSet, base_name='image_
 router.register('appointment', viewsets.AppointmentViewSet, base_name='appointment_endpoint')
 router.register('appointments', viewsets.AppointmentsViewSet, base_name='appointments_endpoint')
 router.register('diagnostic', viewsets.DiagnosticViewSet, base_name='diagnostic_endpoint')
+router.register('diagnostics', viewsets.DiagnosticNestedViewSet, base_name='diagnostics_endpoint')
 router.register('image-diagnostic', viewsets.ImageDiagnosticViewSet, base_name='image_diagnostic_endpoint')
 router.register('agreement', viewsets.AgreementViewSet, base_name='agreement_endpoint')
 router.register('billstopay', viewsets.BillsToPayViewSet, base_name='billstopay_endpoint')

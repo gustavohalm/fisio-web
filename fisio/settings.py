@@ -25,7 +25,7 @@ SECRET_KEY = '#h*5i6etg3#9sk$w9n+e!ppdj!1h!sp@%o*j@eq_x2o--fwffp'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['fisio.gustavohalm.com', 'www.gustavohalm.com']
+ALLOWED_HOSTS = ['*',]
 
 
 # Application definition

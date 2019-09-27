@@ -3,18 +3,22 @@ from rest_framework import viewsets
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.authentication import TokenAuthentication, SessionAuthentication
 
+
 class PatientViewSet(viewsets.ModelViewSet):
     serializer_class = serializers.PatientSerializer
     permission_classes = (IsAuthenticated,)
+
     def get_queryset(self):
         return models.Patient.objects.filter(fisio=self.request.user)
 
     def perform_create(self, serializer):
         serializer.save(fisio=self.request.user)
 
+
 class AppointmentViewSet(viewsets.ModelViewSet):
     serializer_class =  serializers.AppointmentSerializer
     permission_classes = (IsAuthenticated,)
+
     def get_queryset(self):
         if 'day' in self.request.GET:
             day = self.request.GET['day']
@@ -23,6 +27,7 @@ class AppointmentViewSet(viewsets.ModelViewSet):
 
     def perform_create(self, serializer):
         serializer.save(fisio=self.request.user)
+
 
 class AppointmentsViewSet(viewsets.ModelViewSet):
     serializer_class = serializers.AppointmentsSerializer
@@ -34,9 +39,11 @@ class AppointmentsViewSet(viewsets.ModelViewSet):
             return models.Appointment.objects.filter(day=day, fisio=self.request.user).order_by('-time')
         return models.Appointment.objects.all()
 
+
 class DiagnosticViewSet(viewsets.ModelViewSet):
     serializer_class = serializers.DiagnosticSerializer
     permission_classes = (IsAuthenticated,)
+
     def get_queryset(self):
         if 'patient' in self.request.GET:
             patient = self.request.GET['patient']
@@ -45,6 +52,18 @@ class DiagnosticViewSet(viewsets.ModelViewSet):
 
     def perform_create(self, serializer):
         serializer.save(fisio=self.request.user)
+
+
+class DiagnosticNestedViewSet(viewsets.ModelViewSet):
+    serializer_class = serializers.DiagnosticNestedSerializer
+    permission_classes = (IsAuthenticated,)
+
+    def get_queryset(self):
+        if 'patient' in self.request.GET:
+            patient = self.request.GET['patient']
+            return models.Diagnostic.objects.filter(patient=patient)
+        return models.Diagnostic.objects.filter(fisio=self.request.user)
+
 
 class FieldDiagnosticsViewSet(viewsets.ModelViewSet):
     serializer_class = serializers.FieldDiagnosticsSerializer
